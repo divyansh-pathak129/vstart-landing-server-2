@@ -43,7 +43,7 @@ io.on("connection", (socket) => {
                 // console.log("done")
             }
         } else {
-            socket.emit('error', { message: 'Email is required!' });
+            socket.emit('error', { message: 'Email is missing!' });
         }
     });
 })
